@@ -5,3 +5,4 @@ dev:
 
 test:
   type: eth_tester
+  autodeploy_allowed: true
