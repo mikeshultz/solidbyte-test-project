@@ -34,3 +34,6 @@ def main(web3, contracts, deployer_account):
     # Deploy GasVariation
     GasVariation = contracts.get('GasVariation')
     gv = GasVariation.deployed()
+
+    GasVariationCaller = contracts.get('GasVariationCaller')
+    gvc = GasVariationCaller.deployed(gv.address)
