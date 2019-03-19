@@ -1,3 +1,7 @@
+import interface.IGasVariation as IGasVariation
+
+implements: IGasVariation
+
 owner: public(address)
 counter: public(uint256)
 
