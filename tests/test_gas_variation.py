@@ -40,7 +40,7 @@ def test_gas_variation(web3, contracts, local_accounts):
     receipt = web3.eth.waitForTransactionReceipt(hsh)
     assert receipt.status == 1
 
-def test_gas_variation(web3, contracts, local_accounts):
+def test_gas_variation_caller(web3, contracts, local_accounts):
     """ Use GasVariation contract to test a full range of gas usage """
 
     owner, joe = get_remote_accounts(web3, 2)
