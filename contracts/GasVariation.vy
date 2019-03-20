@@ -1,4 +1,4 @@
-import interface.IGasVariation as IGasVariation
+import contracts.interface.IGasVariation as IGasVariation
 
 implements: IGasVariation
 
