@@ -1,4 +1,4 @@
-import contracts.interface.IGasVariation as IGasVariation
+import interface.IGasVariationVyper as IGasVariation
 
 implements: IGasVariation
 
