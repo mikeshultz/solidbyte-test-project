@@ -7,7 +7,7 @@ def autofund_account(web3, address, value):
 
     net_id = int(web3.net.version)
     balance = web3.eth.getBalance(address)
-    
+
     if net_id > 100:
         # If this is the test network, make sure our deployment account is funded
         if balance == 0:
@@ -34,6 +34,12 @@ def main(web3, contracts, deployer_account):
     # Deploy GasVariation
     GasVariation = contracts.get('GasVariation')
     gv = GasVariation.deployed()
+    assert gv.address is not None
 
     GasVariationCaller = contracts.get('GasVariationCaller')
     gvc = GasVariationCaller.deployed(gv.address)
+    assert gvc.address is not None
+
+    DumbContract = contracts.get('DumbContract')
+    dumb = DumbContract.deployed()
+    assert dumb.address is not None
