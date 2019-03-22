@@ -17,5 +17,5 @@ jobs:
         include:
           - python: 3.6
       env: 
-        - TESTING=1 SCRIPT='sb -d test test'
+        - TESTING=1 SCRIPT='sb compile && sb -d test test'
 script: $SCRIPT
