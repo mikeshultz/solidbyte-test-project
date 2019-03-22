@@ -11,6 +11,10 @@
     {
       "name": "GasVariationCaller",
       "networks": {}
+    },
+    {
+      "name": "DumbContract",
+      "networks": {}
     }
   ]
 }
