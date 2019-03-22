@@ -1,8 +1,6 @@
 language: python
 python: 
   - 3.6
-env:
-  - TESTING=1 SCRIPT='sb -d test test'
 install:
   - pip install -r requirements.txt
 jobs:  
@@ -13,4 +11,11 @@ jobs:
           - python: 3.6
       env: 
         - TESTING=0 SCRIPT="flake8 && flake8-vyper"
+  include:
+    - stage: "test"
+      matrix:
+        include:
+          - python: 3.6
+      env: 
+        - TESTING=1 SCRIPT='sb -d test test'
 script: $SCRIPT
