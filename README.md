@@ -1,4 +1,7 @@
 # solidbyte-test-project
+[![Build Status](https://travis-ci.org/mikeshultz/solidbyte-test-project.svg?branch=master)](https://travis-ci.org/mikeshultz/solidbyte-test-project)
+
+Solidbyte version: `0.8.2b1`
 
 A test project for Solidbyte.  Mostly used for trying out features but can also be a reference for new users.
 
@@ -19,4 +22,3 @@ To setup a virtual environment and install dependencies:
 ### Linting Vyper
 
     flake8-vyper
-    
