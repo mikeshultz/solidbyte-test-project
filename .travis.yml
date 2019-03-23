@@ -18,4 +18,4 @@ jobs:
       env:
         - TEST_PASSWORD="asdf1234"
       before_script: sb accounts create --default -p $TEST_PASSWORD
-      script: sb -d test test -p $TEST_PASSWORD
+      script: sb test test -p $TEST_PASSWORD
