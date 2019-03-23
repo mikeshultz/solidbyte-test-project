@@ -9,13 +9,11 @@ jobs:
       matrix:
         include:
           - python: 3.6
-      env: 
-        - TESTING=0 SCRIPT="flake8 && flake8-vyper"
+      script: flake8 && flake8-vyper
   include:
     - stage: "test"
       matrix:
         include:
           - python: 3.6
-      env: 
-        - TESTING=1 SCRIPT='sb compile && sb -d test test'
-script: $SCRIPT
+      before_script: sb accounts create --default
+      script: sb -d test test
