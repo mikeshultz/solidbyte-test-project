@@ -3,7 +3,8 @@
 
 Solidbyte version: `0.8.3b1`
 
-A test project for Solidbyte.  Mostly used for trying out features but can also be a reference for new users.
+A test project for [Solidbyte](https://github.com/mikeshultz/solidbyte).  Mostly
+used for trying out features but can also be a reference for new users.
 
 ## Development
 
@@ -22,3 +23,9 @@ To setup a virtual environment and install dependencies:
 ### Linting Vyper
 
     flake8-vyper
+
+### Test Contracts
+
+Testing using the `test` network, which in our case is `eth_tester`.
+
+    sb test test
