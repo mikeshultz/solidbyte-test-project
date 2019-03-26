@@ -9,10 +9,11 @@ def autofund_account(web3, address, value):
     balance = web3.eth.getBalance(address)
 
     if net_id > 100:
-        # If this is the test network, make sure our deployment account is funded
+        # If this is the test network, make sure our deployment account is
+        # funded
         if balance == 0:
             tx = web3.eth.sendTransaction({
-                'from': web3.eth.accounts[0],  # The pre-funded account in ganace-cli
+                'from': web3.eth.accounts[0],  # The pre-funded test account
                 'to': address,
                 'value': value,
                 'gasPrice': STD_GAS_PRICE,
@@ -29,6 +30,7 @@ def autofund_account(web3, address, value):
                 balance
             )
         )
+
 
 def main(web3, contracts, deployer_account):
 
