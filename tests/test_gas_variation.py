@@ -1,7 +1,7 @@
-from .utils import std_tx, get_remote_accounts
+from .utils import get_remote_accounts
 
 
-def test_gas_variation(web3, contracts, local_accounts):
+def test_gas_variation(web3, contracts, local_accounts, std_tx):
     """ Use GasVariation contract to test a full range of gas usage """
 
     owner, joe = get_remote_accounts(web3, 2)
@@ -42,7 +42,7 @@ def test_gas_variation(web3, contracts, local_accounts):
     assert receipt.status == 1
 
 
-def test_gas_variation_caller(web3, contracts, local_accounts):
+def test_gas_variation_caller(web3, contracts, local_accounts, std_tx):
     """ Use GasVariation contract to test a full range of gas usage """
 
     owner, joe = get_remote_accounts(web3, 2)

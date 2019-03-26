@@ -1,7 +1,8 @@
-from .utils import std_tx, get_remote_accounts, get_event, has_event
+from .utils import get_remote_accounts
 
 
-def test_dumb_contract(web3, contracts, local_accounts):
+def test_dumb_contract(web3, contracts, local_accounts, std_tx, get_event,
+                       has_event):
     """ Tests for Dumbcontract """
 
     owner, joe, alice = get_remote_accounts(web3, 3)

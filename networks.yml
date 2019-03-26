@@ -2,6 +2,7 @@
 ---
 dev:
   type: auto
+  use_default_account: true
 
 test:
   type: eth_tester
