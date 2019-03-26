@@ -7,7 +7,7 @@ jobs:
   include:
     - stage: "lint"
       script: flake8 && flake8-vyper
-  include:
+
     - stage: "test"
       env:
         - TEST_PASSWORD="asdf1234"
