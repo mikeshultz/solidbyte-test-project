@@ -23,8 +23,12 @@ def autofund_account(web3, address, value):
             assert balance >= value, "Funding of deployer_account too low"
     else:
         # Make sure deployer account has at least 0.5 ether
-        assert balance < int(5e17), "deployer account needs to be funded"
-
+        assert balance > int(5e17), (
+            "deployer account needs to be funded. want: {}. has: {}".format(
+                int(5e17),
+                balance
+            )
+        )
 
 def main(web3, contracts, deployer_account):
 
