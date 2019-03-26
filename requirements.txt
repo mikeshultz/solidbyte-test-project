@@ -1,2 +1,2 @@
-solidbyte==0.8.3b1
+solidbyte==1.0.0
 flake8-vyper>=0.1.8

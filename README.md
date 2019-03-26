@@ -1,7 +1,7 @@
 # solidbyte-test-project
 [![Build Status](https://travis-ci.org/mikeshultz/solidbyte-test-project.svg?branch=master)](https://travis-ci.org/mikeshultz/solidbyte-test-project)
 
-Solidbyte version: `0.8.3b1`
+Solidbyte version: `1.0.0`
 
 A test project for [Solidbyte](https://github.com/mikeshultz/solidbyte).  Mostly
 used for trying out features but can also be a reference for new users.
