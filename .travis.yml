@@ -6,15 +6,9 @@ install:
 jobs:  
   include:
     - stage: "lint"
-      matrix:
-        include:
-          - python: 3.6
       script: flake8 && flake8-vyper
   include:
     - stage: "test"
-      matrix:
-        include:
-          - python: 3.6
       env:
         - TEST_PASSWORD="asdf1234"
       before_script: sb accounts create --default -p $TEST_PASSWORD
