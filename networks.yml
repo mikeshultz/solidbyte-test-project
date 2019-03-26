@@ -9,6 +9,10 @@ test:
   autodeploy_allowed: true
   use_default_account: true
 
+infura-rinkeby:
+  type: http
+  url: https://rinkeby.infura.io/v3/cddb65a1134b4dd587325ae7c68a090a
+
 infura-mainnet:
   type: websocket
   url: wss://mainnet.infura.io/ws

@@ -6,15 +6,250 @@
   "contracts": [
     {
       "name": "GasVariation",
-      "networks": {}
+      "networks": {
+        "4": {
+          "deployedHash": "0x99c6843940d2ae58aa889e7c7b3e646023fe1322fde769869413ac41bd366665",
+          "deployedInstances": [
+            {
+              "hash": "0x99c6843940d2ae58aa889e7c7b3e646023fe1322fde769869413ac41bd366665",
+              "date": "2019-03-26T11:14:35.922258",
+              "address": "0xb4D6b3D39d8b447DF9c78Dd18D01d8A6473F8d96",
+              "abi": [
+                {
+                  "outputs": [],
+                  "inputs": [],
+                  "constant": false,
+                  "payable": false,
+                  "type": "constructor"
+                },
+                {
+                  "name": "low_gas",
+                  "outputs": [
+                    {
+                      "type": "uint256",
+                      "name": "out"
+                    }
+                  ],
+                  "inputs": [],
+                  "constant": false,
+                  "payable": false,
+                  "type": "function",
+                  "gas": 358956
+                },
+                {
+                  "name": "med_gas",
+                  "outputs": [
+                    {
+                      "type": "uint256",
+                      "name": "out"
+                    }
+                  ],
+                  "inputs": [],
+                  "constant": false,
+                  "payable": false,
+                  "type": "function",
+                  "gas": 896646
+                },
+                {
+                  "name": "high_gas",
+                  "outputs": [
+                    {
+                      "type": "uint256",
+                      "name": "out"
+                    }
+                  ],
+                  "inputs": [],
+                  "constant": false,
+                  "payable": false,
+                  "type": "function",
+                  "gas": 6273276
+                },
+                {
+                  "name": "error_gas",
+                  "outputs": [
+                    {
+                      "type": "uint256",
+                      "name": "out"
+                    }
+                  ],
+                  "inputs": [],
+                  "constant": false,
+                  "payable": false,
+                  "type": "function",
+                  "gas": 32260206
+                },
+                {
+                  "name": "owner",
+                  "outputs": [
+                    {
+                      "type": "address",
+                      "name": "out"
+                    }
+                  ],
+                  "inputs": [],
+                  "constant": true,
+                  "payable": false,
+                  "type": "function",
+                  "gas": 603
+                },
+                {
+                  "name": "counter",
+                  "outputs": [
+                    {
+                      "type": "uint256",
+                      "name": "out"
+                    }
+                  ],
+                  "inputs": [],
+                  "constant": true,
+                  "payable": false,
+                  "type": "function",
+                  "gas": 633
+                }
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "name": "GasVariationCaller",
-      "networks": {}
+      "networks": {
+        "4": {
+          "deployedHash": "0x83e0db9966b9e8b824bcc9238349239d590f25ec284f8f4feddba8af85d8def2",
+          "deployedInstances": [
+            {
+              "hash": "0x83e0db9966b9e8b824bcc9238349239d590f25ec284f8f4feddba8af85d8def2",
+              "date": "2019-03-26T11:14:50.667974",
+              "address": "0x2Df085C0530c0FD5e8A4B7437b2Ed4103A88402F",
+              "abi": [
+                {
+                  "constant": true,
+                  "inputs": [],
+                  "name": "getGasVariationAddress",
+                  "outputs": [
+                    {
+                      "name": "",
+                      "type": "address"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "view",
+                  "type": "function"
+                },
+                {
+                  "constant": false,
+                  "inputs": [],
+                  "name": "callLowGas",
+                  "outputs": [
+                    {
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "constant": false,
+                  "inputs": [],
+                  "name": "callMedGas",
+                  "outputs": [
+                    {
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "inputs": [
+                    {
+                      "name": "gasVariationAddress",
+                      "type": "address"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "nonpayable",
+                  "type": "constructor"
+                }
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "name": "DumbContract",
-      "networks": {}
+      "networks": {
+        "4": {
+          "deployedHash": "0x1ca08dc7fb3729a2f2dfd162c8143990d045f44c5384e45291bbaf28004e7364",
+          "deployedInstances": [
+            {
+              "hash": "0x1ca08dc7fb3729a2f2dfd162c8143990d045f44c5384e45291bbaf28004e7364",
+              "date": "2019-03-26T11:15:05.764635",
+              "address": "0x25820e39CEB1A46FBd332BebC0eC53c3fB5033c7",
+              "abi": [
+                {
+                  "constant": false,
+                  "inputs": [
+                    {
+                      "name": "value",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "emitUint256",
+                  "outputs": [],
+                  "payable": false,
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "constant": false,
+                  "inputs": [
+                    {
+                      "name": "value",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "emitAddress",
+                  "outputs": [],
+                  "payable": false,
+                  "stateMutability": "nonpayable",
+                  "type": "function"
+                },
+                {
+                  "anonymous": false,
+                  "inputs": [
+                    {
+                      "indexed": false,
+                      "name": "val",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "AddressEvent",
+                  "type": "event"
+                },
+                {
+                  "anonymous": false,
+                  "inputs": [
+                    {
+                      "indexed": false,
+                      "name": "val",
+                      "type": "uint256"
+                    }
+                  ],
+                  "name": "Uint256Event",
+                  "type": "event"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }
